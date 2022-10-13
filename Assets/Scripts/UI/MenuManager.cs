@@ -1,7 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
-using System;
 
 public class MenuManager : MonoBehaviour
 {
@@ -117,12 +116,14 @@ public class MenuManager : MonoBehaviour
 
     private void InitializeAnimation()
     {
+        // Titulo
         _titleGroup.DOFade(1, _titleAppearTime).OnComplete(() => {
-            _titleGroup.GetComponent<RectTransform>().DORotate(new Vector3(0,0,10), 1.0f).SetLoops(-1, LoopType.Yoyo);
+            _title.DORotate(new Vector3(0,0,10), 1.0f).SetLoops(-1, LoopType.Yoyo);
         });
-        _buttonsGroup.DOFade(1, _buttonsAppearTime);
-        
         _title.DOAnchorPos(_titleFinalPosition, _titleAppearTime).SetEase(_defaultEase);
+
+        // Grupo de botones
+        _buttonsGroup.DOFade(1, _buttonsAppearTime);
         _buttonsContainer.DOAnchorPos(_buttonsFinalPosition, _buttonsAppearTime).SetEase(_defaultEase);
     }
 }

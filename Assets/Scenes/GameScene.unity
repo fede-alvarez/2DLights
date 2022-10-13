@@ -1905,11 +1905,29 @@ MonoBehaviour:
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
+    m_Style: 7
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2483,7 +2501,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827552838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.43, y: 6.02, z: 0}
+  m_LocalPosition: {x: -7.76, y: 6.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4059,17 +4077,17 @@ NavMeshAgent:
   m_GameObject: {fileID: 1441805949}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1.6
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 10.52
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 228.1
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
+  m_Height: 3
+  m_BaseOffset: 1.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 3
 --- !u!212 &1441805952
@@ -4258,7 +4276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519184706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.57, y: 6.02, z: 0}
+  m_LocalPosition: {x: 0.23999965, y: 6.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4444,7 +4462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696113642}
   m_LocalRotation: {x: 0, y: 0, z: -0.018778702, w: 0.9998237}
-  m_LocalPosition: {x: 10.52, y: 6.02, z: 0}
+  m_LocalPosition: {x: 9.190001, y: 6.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
